@@ -9,7 +9,7 @@ Editableform based on Twitter Bootstrap 3
     
     $.extend($.fn.editableform.Constructor.prototype, {
         initTemplate: function() {
-            this.$form = $($.fn.editableform.template); 
+            this.$form = $(this.options.template || $.fn.editableform.template);
             this.$form.find('.control-group').addClass('form-group');
             this.$form.find('.editable-error-block').addClass('help-block');
         },
@@ -49,11 +49,11 @@ Editableform based on Twitter Bootstrap 3
     
     //buttons
     $.fn.editableform.buttons = 
-      '<button type="submit" class="btn btn-primary btn-sm editable-submit">'+
-        '<i class="glyphicon glyphicon-ok"></i>'+
+      '<button type="submit" class="btn btn-primary editable-submit">'+
+        '<i class="fa fa-check"></i>'+
       '</button>'+
-      '<button type="button" class="btn btn-default btn-sm editable-cancel">'+
-        '<i class="glyphicon glyphicon-remove"></i>'+
+      '<button type="button" class="btn btn-default editable-cancel">'+
+        '<i class="fa fa-remove"></i>'+
       '</button>';         
     
     //error classes

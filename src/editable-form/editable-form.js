@@ -37,7 +37,7 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
         },
         initButtons: function() {
             var $btn = this.$form.find('.editable-buttons');
-            $btn.append($.fn.editableform.buttons);
+            $btn.append(this.options.buttons_template || $.fn.editableform.buttons);
             if(this.options.showbuttons === 'bottom') {
                 $btn.addClass('editable-buttons-bottom');
             }
@@ -78,7 +78,7 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
             this.initInput();
             
             //append input to form
-            this.$form.find('div.editable-input').append(this.input.$tpl);            
+            this.$form.find('div.editable-input').prepend(this.input.$tpl);            
             
             //append form to container
             this.$div.append(this.$form);
