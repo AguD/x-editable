@@ -8,64 +8,64 @@ function getFiles() {
 
     //config for different cores of lib 
     var config = {
-        bootstrap: {
-            form: [forms+'editable-form-bootstrap.js'],
-            container: [containers+'editable-popover.js'],
-            inputs: [
-                inputs+'date/bootstrap-datepicker/js/bootstrap-datepicker.js',
-                inputs+'date/date.js', 
-                inputs+'date/datefield.js', 
-                inputs+'datetime/datetime.js', 
-                inputs+'datetime/datetimefield.js',
-                //don't build datetime lib, should be included manually 
-                //inputs+'datetime/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js',
-                inputs+'typeahead.js'
-                ], 
-            css: [
-                inputs+'date/bootstrap-datepicker/css/datepicker.css'
-               //don't build datetime lib, should be included manually
-               //inputs+'datetime/bootstrap-datetimepicker/css/datetimepicker.css'
-                ]
-        },
+        // bootstrap: {
+        //     form: [forms+'editable-form-bootstrap.js'],
+        //     container: [containers+'editable-popover.js'],
+        //     inputs: [
+        //         inputs+'date/bootstrap-datepicker/js/bootstrap-datepicker.js',
+        //         inputs+'date/date.js', 
+        //         inputs+'date/datefield.js', 
+        //         inputs+'datetime/datetime.js', 
+        //         inputs+'datetime/datetimefield.js',
+        //         //don't build datetime lib, should be included manually 
+        //         //inputs+'datetime/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js',
+        //         inputs+'typeahead.js'
+        //         ], 
+        //     css: [
+        //         inputs+'date/bootstrap-datepicker/css/datepicker.css'
+        //        //don't build datetime lib, should be included manually
+        //        //inputs+'datetime/bootstrap-datetimepicker/css/datetimepicker.css'
+        //         ]
+        // },
         bootstrap3: {
             filePrefix: 'bootstrap', //to have bootstrap-editable.js instead of bootstrap3-editable
             form: [forms+'editable-form-bootstrap3.js'],
             container: [containers+'editable-popover3.js'],
             inputs: [
-                inputs+'date/bootstrap-datepicker/js/bootstrap-datepicker.js',
-                inputs+'date/date.js', 
-                inputs+'date/datefield.js', 
-                inputs+'datetime/datetime.js', 
-                inputs+'datetime/datetimefield.js'
+                //inputs+'date/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                //inputs+'date/date.js', 
+                //inputs+'date/datefield.js', 
+                //inputs+'datetime/datetime.js', 
+                //inputs+'datetime/datetimefield.js'
                 //don't build datetime lib, should be included manually 
                 //inputs+'datetime/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js',
                 //no typeahead in bs3
                 //inputs+'typeahead.js'
                 ], 
             css: [
-                inputs+'date/bootstrap-datepicker/css/datepicker.css'
+                //inputs+'date/bootstrap-datepicker/css/datepicker.css'
                //don't build datetime lib, should be included manually
                //inputs+'datetime/bootstrap-datetimepicker/css/datetimepicker.css'
                 ]
         }, 
-        jqueryui: {
-            form: [forms+'editable-form-jqueryui.js'],
-            container: [containers+'editable-tooltip.js'],
-            inputs: [
-               inputs+'dateui/dateui.js',
-               inputs+'dateui/dateuifield.js'
-            ], 
-            css: []
-        },  
-        jquery: {
-            form: [],
-            container: [containers+'editable-poshytip.js'],
-            inputs: [
-               inputs+'dateui/dateui.js',
-               inputs+'dateui/dateuifield.js'
-            ],            
-            css: []
-        }      
+        // jqueryui: {
+        //     form: [forms+'editable-form-jqueryui.js'],
+        //     container: [containers+'editable-tooltip.js'],
+        //     inputs: [
+        //        inputs+'dateui/dateui.js',
+        //        inputs+'dateui/dateuifield.js'
+        //     ], 
+        //     css: []
+        // },  
+        // jquery: {
+        //     form: [],
+        //     container: [containers+'editable-poshytip.js'],
+        //     inputs: [
+        //        inputs+'dateui/dateui.js',
+        //        inputs+'dateui/dateuifield.js'
+        //     ],            
+        //     css: []
+        // }
     };
 
     //common js files 
@@ -76,15 +76,15 @@ function getFiles() {
         containers+'editable-inline.js',
         lib+'element/editable-element.js',
         inputs+'abstract.js',
-        inputs+'list.js',
+        //inputs+'list.js',
         inputs+'text.js',
         inputs+'textarea.js',
-        inputs+'select.js',    
-        inputs+'checklist.js',
-        inputs+'html5types.js',
-        inputs+'select2/select2.js',
-        inputs+'combodate/lib/combodate.js', 
-        inputs+'combodate/combodate.js'    
+        //inputs+'select.js',    
+        //inputs+'checklist.js',
+        //inputs+'html5types.js',
+        //inputs+'select2/select2.js',
+        //inputs+'combodate/lib/combodate.js', 
+        //inputs+'combodate/combodate.js'    
     ]; 
 
     //common css files
