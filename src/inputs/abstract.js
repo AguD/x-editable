@@ -149,7 +149,11 @@ To create your own input you can inherit from this class.
         attach handler to automatically submit form when value changed (useful when buttons not shown)
        **/
        autosubmit: function() {
-        
+           this.$input.on('keydown', function(e){
+               if (e.which === 13 && !e.shiftKey) {
+                   $(this).closest('form').submit();
+               }
+           });
        },
        
        /**
