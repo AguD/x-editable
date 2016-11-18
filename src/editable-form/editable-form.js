@@ -614,7 +614,8 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
     '<div class="control-group">' + 
     '<div><div class="editable-input"></div><div class="editable-buttons"></div></div>'+
     '<div class="editable-error-block"></div>' + 
-    '</div>' + 
+    '</div>' +
+    '<div class="editable-help-block help-block">Presiona Esc para <a class="editable-cancel">cancelar</a></div>' +
     '</form>';
 
     //loading div
